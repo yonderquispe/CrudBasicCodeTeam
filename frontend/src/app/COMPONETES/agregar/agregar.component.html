@@ -1,0 +1,11 @@
+<div class="container">
+    <form action="">
+        <label for="tarea">Tarea</label>
+        <input type="text" id="tarea" name="tarea" [(ngModel)]="tareaNueva.tarea">
+        <br>
+        <label for="estado">Estado</label>
+        <input type="checkbox" name="estado" id="estado" [(ngModel)]="tareaNueva.finalizado">
+        <br>
+        <button class="btn btn-primary" (click)="agregarTarea()">Guardar</button>
+    </form>
+</div>

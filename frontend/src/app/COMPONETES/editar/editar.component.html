@@ -1,0 +1,9 @@
+<div class="container">
+    <label for="tarea">Tarea</label>
+    <input type="text" id="tarea" name="tarea" [(ngModel)]="tareaActual.tarea">
+    <br>
+    <label for="estado">Estado</label>
+    <input type="checkbox" name="estado" id="estado" [(ngModel)]="tareaActual.finalizado">
+
+    <button class="btn btn-primary" (click)="guardad()">guardar</button>
+</div>
